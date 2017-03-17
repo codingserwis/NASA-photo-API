@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>NASA API Challenge</title>
+		<script src="https://use.fontawesome.com/b1f95d1c43.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<section class="section_one flex flex_col flex_center_center">
+			<h1 class="main_header">NASA API Challenge</h1>
+			<h2 class="img_title"></h2>
+			<div class="bottom flex flex_col flex_center">
+				<p class="click_info">Scroll down / click to see Mars owsom images</p>
+				<div class="jumping_elem">
+					<a id="to_galery" href="#galery"><i class="fa fa-angle-down move_down" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</section>
+		<section id="galery" class="section_two flex flex_col flex_center">
+			<h1 class="mars_gallery_title">Get some awesome photos from Mars</h1>
+			<h2 class="galery_options">Pleas choose Mars rover</h2>
+			<div class="flex flex_col" style="min-width: 250px; padding: 0 15px;">
+				<div class="dropdown_list">
+					<span>Rover</span>
+					<ul class="list_panel">
+						<li data-value="curiosity">Curiousity</li>
+						<li data-value="opportunity">Opportunity</li>
+						<li data-value="spirit">Spirit</li>
+					</ul>
+				</div>
+				<div class="manifest">
+				<ul id="rover_info"></ul>
+			</div>
+			<div class="manifest">
+			<ul id="sol_date"></ul>
+		</div>
+		<div class="manifest">
+		<ul id="camera_and_photo_info"></ul>
+	</div>
+</div>
+<ul id="photos" class="photos"></ul>
+</section>
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

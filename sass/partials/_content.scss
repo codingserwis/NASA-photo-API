@@ -1,0 +1,100 @@
+// *** CONFIG ***
+$white-text: map-get($global-font-colors, white);
+$font-normal: map-get($global-font-weights, standard);
+$font-light: map-get($global-font-weights, light);
+$gray-background: map-get($global-colors, light-gray);
+$main-black: map-get($global-colors, black);
+
+.section_one {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.main_header {
+	font-size: 6rem;
+	font-weight: $font-normal;
+	color: $white-text;
+}
+.img_title {
+	font-size: 1.5rem;
+	font-weight: $font-light;
+	color: $white-text;
+}
+.click_info {
+	color: $white-text;
+	font-size: 0.9rem;
+	font-weight: $font-light;
+}
+.jumping_elem {
+	animation-name: jumping;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; /*cubic-bezier(0.445, 0.05, 0.55, 0.95);*/
+}
+.bottom {
+	position: absolute;
+	bottom: 25px;
+}
+.move_down {
+	color: #fff;
+	font-size: 5rem;
+}
+.section_two {
+	width: 100vw;
+	min-height: 100vh;
+	padding: 50px 0;
+	background-color: rgba($gray-background, 0.5);
+}
+.mars_gallery_title {
+	font-size: 3.5rem;
+}
+.galery_options {
+	font-size: 1.5rem;
+}
+.dropdown_list {
+	cursor: pointer;
+	@include my_border(3px, solid, $main-black);
+	font-size: 1.5rem;
+	padding: 7px 19px;
+	margin: 7px 19px;
+	text-align: center;
+		span {
+			font-size: 1.9rem;
+		}
+}
+.list_panel {
+	display: none;
+		li {
+			margin: 5px 0;
+			font-weight: $font-light;
+			transition: all 0.3s;
+			&:hover {
+				color: $white-text;
+			}
+		}
+}
+#rover_info {
+	li {
+		p {
+			margin: 5px 0;
+		}
+	}
+}
+.photo_list {
+	min-width: 440px;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+		p {
+			font-size: 1.5rem;
+		}
+		img {
+			width: 250px;
+			height: 250px;
+			margin: 10px 0;
+		}
+}

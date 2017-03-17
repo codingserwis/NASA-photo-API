@@ -1,0 +1,15 @@
+// *** RESET ***
+@import 'partials/_reset';
+//@import 'partials/_clearfix';
+
+// *** VARS ***
+@import 'modules/_global-vars';
+
+// *** MIXINS *** 
+@import 'modules/_mixins';
+
+// *** CONTENT ***
+@import 'partials/_animations';
+@import 'partials/_general';
+@import 'partials/_flex';
+@import 'partials/_content';

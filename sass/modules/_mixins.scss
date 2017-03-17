@@ -1,0 +1,8 @@
+@mixin my_animation ($name){
+	@keyframes #{$name} {
+		@content;
+	}
+}
+@mixin my_border ($size, $type, $color){
+	border: $size $type $color;
+}
