@@ -8,4 +8,4 @@ Do stworzenia aplikacji wykorzystałem:
 * HTML
 * CSS3
 * Preprocesor SASS
-* jQuery
+* jQuery - kod js celowo nie jest zminifikowany.
